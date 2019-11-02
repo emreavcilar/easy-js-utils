@@ -1,0 +1,39 @@
+{
+  "name": "easy-js-utils",
+  "version": "1.0.3",
+  "author": {
+    "name": "Emre Avcılar",
+    "email": "emreavcilar@gmail.com"
+  },
+  "description": "javascript helper functions and utilities",
+  "keywords": [
+    "javascript",
+    "utility",
+    "array",
+    "string",
+    "date",
+    "string utilities",
+    "array utilities",
+    "date utilities",
+    "helper functions",
+    "snippets"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emreavcilar/easy-js-utils.git"
+  },
+  "scripts": {
+    "test": "jasmine"
+  },
+  "contributors": [],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/register": "^7.6.2",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.5.1",
+    "jasmine": "^3.5.0"
+  }
+}
