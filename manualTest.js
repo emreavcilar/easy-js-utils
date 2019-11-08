@@ -38,9 +38,20 @@ let resultHightligtText = stringUtils.highlightText('lorem ipsum dolor sit amet'
 let resultUnHightligtText = stringUtils.unHighlightText('<p class="highlight">lorem</p> ipsum dolor sit amet', 'p');
 // console.log('result resultUnHightligtText ', resultUnHightligtText);
 
+let resultCamelize = stringUtils.camelize('Lorem ipsum dolor sit amet');
+// console.log('result resultCamelize ', resultCamelize);
+
 //---------------------------------------------------------
 
 const dateUtils = require('./lib/dateUtils');
 let resultIsValidDate = dateUtils.isValidDate('31-11-2015','dd-mm-yy');
 // let resultIsValidDate = dateUtils.isValidDate('05-11-2015','dd-mm-yy');
-console.log('result resultIsValidDate ' , resultIsValidDate);
+// console.log('result resultIsValidDate ' , resultIsValidDate);
+
+//---------------------------------------------------------
+
+const numberUtils = require('./lib/numberUtils');
+let resultAddComas = numberUtils.addComas(1222.23,',');
+console.log('result resultAddComas ' , resultAddComas);
+
+//---------------------------------------------------------

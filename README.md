@@ -8,14 +8,28 @@ Table of Contents
   * [Usage](#usage)
     
   * [API](#api)
-    * [Array utilities](#easy-js-utils/arrayUtils)
-    * [String utilities](#easy-js-utils/stringUtils)
-    * [Date utilities](#dateUtils)
+    * [Array utilities](#array-utilities)
+      * [differenceBetweenTwoArrays](#differenceBetweenTwoArrays)
+      * [countofElements](#countofElements)
+      * [getMaxElementInArray](#getMaxElementInArray)
+      * [getMinElementInArray](#getMinElementInArray)
+      * [sumOfElementsInArray](#sumOfElementsInArray)
+      * [selectRandomFromArray](#selectRandomFromArray)
+    * [String utilities](#string-utilities)
+      * [revertString](#revertString)
+      * [excerpt](#excerpt)
+      * [highlightText](#highlightText)
+      * [unHighlightText](#unHighlightText)
+      * [camelize](#camelize)
+    * [Date utilities](#date-utilities)
+      * [isDate](#isDate)
+    * [Number utilities](#number-utilities)
+      * [addComas](#addComas)
   * [License](#license)
 
 
 easy-js-utils
-=========
+=============
 
 **easy-js-utils** is a package of helper functions.
 
@@ -121,6 +135,13 @@ import {unHighlightText} from 'easy-js-utils/lib/stringUtils'
 unHighlightText('<p class="highlight">lorem</p> ipsum dolor sit amet', 'p')
 //returns lorem ipsum dolor sit amet
 ```
+**camelize**
+Convert any string to camelcase
+```javascript
+import {camelize} from 'easy-js-utils/lib/stringUtils'
+unHighlightText('Lorem ipsum dolor sit amet')
+//returns loremIpsumDolorSitAmet
+```
 
 Date Utilities
 -------------------------
@@ -130,6 +151,15 @@ Returns false if the given date is not valid with the given format
 import {isValidDate} from 'easy-js-utils/lib/dateUtils'
 isValidDate('05-11-2015','dd-mm-yy') //returns true
 isValidDate('31-11-2015','dd-mm-yy') //returns false
+```
+
+Number Utilities
+-------------------------
+**addComas**
+Returns string format of given number with separated given character
+```javascript
+import {addComas} from 'easy-js-utils/lib/numberUtils'
+addComas(123456789,'.') //returns 123.456.789
 ```
 
 License

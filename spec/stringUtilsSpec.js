@@ -2,7 +2,8 @@ import {
     revertString,
     excerpt,
     highlightText,
-    unHighlightText
+    unHighlightText,
+    camelize
 } from '../lib/stringUtils'
 
 describe('revert string', ()=>{
@@ -83,5 +84,22 @@ describe('unHighlight text', ()=>{
         expect(()=>{
             highlightText(5,tag)
         }).toThrowError('text parameter must be string');
+    })
+})
+
+describe('camelize text', () => {
+    let text;
+    beforeEach(()=>{
+        text = "Lorem ipsum dolor sit amet";
+    })
+
+    it('should camelize the given string',()=>{
+        expect(camelize(text)).toEqual('loremIpsumDolorSitAmet')
+    })
+
+    it('should throw an error exception if text parameter is not string', () => {
+        expect(()=>{
+            camelize(5)
+        }).toThrowError('parameter must be string');
     })
 })
